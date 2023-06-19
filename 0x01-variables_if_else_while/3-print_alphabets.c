@@ -1,27 +1,20 @@
+#include <stdlib.h>
+#include <time.h>
 #include <stdio.h>
+
 /**
- * main - Entry point
+ * main - entry point
+ *
  * Return: Always 0 (Success)
  */
 
 int main(void)
 {
-	char c;
+	char ch;
 
-	char d;
-
-	c = 'a';
-	d = 'A';
-	while
-		(c <= 'z') (
-			putchar(c);
-			c++;
-		)
-	while
-		(d <= 'z') (
-			putchar (d);
-			d++;
-		}
-	putchar('\n');
+	for (ch = 'a'; ch <= 'z'; ch++)
+		putchar (ch);
+	for (ch = 'A'; ch <= 'Z'; ch++)
+		putchar('\n');
 	return (0);
 }

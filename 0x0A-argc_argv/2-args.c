@@ -2,14 +2,16 @@
 #include <stdlib.h>
 
 /**
- * main - Prints number of args
+ * main - Prints all args
  * @argc: Count
  * @argv: argumrnts
  * Return: success/failure
  */
 int main(int argc, char *argv[])
 {
-	(void) argv;
-	printf("%d\n", argc);
+	int c;
+
+	for (c = 0; c < argc; c++)
+		printf("%s\n", argv[c]);
 	exit(EXIT_SUCCESS);
 }
